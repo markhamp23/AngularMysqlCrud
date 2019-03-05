@@ -1,0 +1,11 @@
+{
+    "vsoce-mysql.connection":
+    [
+        {
+            "server": "localhost",
+            "database": "ng_games",
+            "user": "root",
+            "password": ""
+        }
+    ]
+}
