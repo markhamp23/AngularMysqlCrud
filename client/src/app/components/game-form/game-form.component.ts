@@ -1,7 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Game } from 'src/app/models/Game';
 
-import { GameService } from 'src/app/services/game.service';
+import { GamesService } from 'src/app/services/games.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -23,7 +23,7 @@ export class GameFormComponent implements OnInit {
 
   edit: boolean = false;
 
-  constructor(private gameService: GameService, private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(private gameService: GamesService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     const params = this.activatedRoute.snapshot.params;
